@@ -4,8 +4,8 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <SideBar></SideBar>
       <Main></Main>
+      <SideBar></SideBar>
       <Footer></Footer>
     </>
   );
