@@ -5,11 +5,16 @@ import { useState } from "react";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
+
+  function handleToggleModal() {
+    setShowModal(!showModal);
+  }
+
   return (
     <>
       <Main></Main>
-      {showModal && <SideBar />}
-      <Footer></Footer>
+      {showModal && <SideBar handleToggleModal={handleToggleModal} />}
+      <Footer handleToggleModal={handleToggleModal} />
     </>
   );
 }
