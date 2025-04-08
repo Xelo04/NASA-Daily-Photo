@@ -53,7 +53,7 @@ footer div {
 }
 
 footer h2 {
-  font-size: 1.4rem;
+  font-size: 2.6rem;
 }
 
 footer h1 {
@@ -133,6 +133,28 @@ footer button:hover {
 
 .sidebarContent button {
   opacity: 0.7;
+}
+
+.loadingState {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.loadingState i {
+  font-size: 3rem;
+  opacity: 0.2;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media (min-width: 640px) {
