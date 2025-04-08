@@ -8,9 +8,19 @@ function App() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   function handleToggleModal() {
-    setShowModal(!showModal);
+    if (showModal) {
+      // Start the slideOut animation
+      setIsAnimating(true);
+      setTimeout(() => {
+        setShowModal(false); // Unmount after animation
+        setIsAnimating(false);
+      }, 300); // Match the duration of the slideOut animation (0.3s)
+    } else {
+      setShowModal(true); // Show the sidebar
+    }
   }
 
   useEffect(() => {
@@ -51,8 +61,13 @@ function App() {
           <i className="fa-solid fa-gear"></i>
         </div>
       )}
-      {showModal && (
-        <SideBar data={data} handleToggleModal={handleToggleModal} />
+      {(showModal || isAnimating) && (
+        <SideBar
+          data={data}
+          handleToggleModal={handleToggleModal}
+          showModal={showModal}
+          isAnimating={isAnimating}
+        />
       )}
       {data && <Footer data={data} handleToggleModal={handleToggleModal} />}
     </>
