@@ -116,8 +116,24 @@ footer button:hover {
   background: #030615;
 }
 
+.descriptionTitle {
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 .sidebarContent div {
   flex: 1;
+}
+
+.sidebarContent h2 {
+  font-size: 1.4rem;
+  font-weight: 200;
 }
 
 .sidebarContent button {
@@ -128,7 +144,7 @@ footer button:hover {
   margin-right: auto;
   cursor: pointer;
   transition-duration: 200ms;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .sidebarContent button {
