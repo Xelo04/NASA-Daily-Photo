@@ -10,6 +10,7 @@ The **NASA Daily Photo** project is a web application that fetches and displays 
 - **Dynamic Sidebar**: View detailed information about the photo in a slide-in sidebar.
 - **Responsive Design**: Optimized for both desktop and mobile devices.
 - **Local Storage**: Caches API data to reduce redundant network requests.
+- **NASA API**: For fetching the Astronomy Picture of the Day (APOD).
 
 ---
 
