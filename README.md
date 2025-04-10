@@ -80,6 +80,7 @@ NASA-Daily-Photo/
 ### Desktop View
 
 ![Desktop View](public/screenshots/DesktopView.png)
+![Desktop Description View](public/screenshots/DesktopViewDescription.png)
 
 ### Mobile View
 
