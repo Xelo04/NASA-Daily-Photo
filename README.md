@@ -4,6 +4,19 @@ The **NASA Daily Photo** project is a web application that fetches and displays 
 
 ---
 
+## 📖 Table of Contents
+
+- [🚀 Features](#-features)
+- [📂 Project Structure](#-project-structure)
+- [🛠️ Technologies Used](#️-technologies-used)
+- [🌟 Key Functionalities](#-key-functionalities)
+- [📸 Screenshots](#-screenshots)
+- [⚙️ Installation and Usage](#️-installation-and-usage)
+- [🤝 Contributing](#-contributing)
+- [📜 License](#-license)
+
+---
+
 ## 🚀 Features
 
 - **Daily Photo Display**: Fetches and displays the Astronomy Picture of the Day from NASA's API.
