@@ -85,6 +85,7 @@ NASA-Daily-Photo/
 ### Mobile View
 
 ![Mobile View](public/screenshots/MobileView.png)
+![Mobile View](public/screenshots/MobileViewDescription.png)
 
 ---
 
